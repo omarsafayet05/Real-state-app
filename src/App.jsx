@@ -13,7 +13,9 @@ function App() {
   console.log(z);
   return (
     <>
-      <h2 className="text-cyan-500 flex justify-center">Hello Brother</h2>
+      <h2 className="text-cyan-500 flex justify-center">
+        Hello Brother,I love you
+      </h2>
     </>
   );
 }
