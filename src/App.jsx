@@ -14,7 +14,7 @@ function App() {
   return (
     <>
       <h2 className="text-cyan-500 flex justify-center">
-        Hello Brother,I love you so much.there is changes to commit.Hey buddy!
+        Hello Brother,I love you so much.
       </h2>
     </>
   );
