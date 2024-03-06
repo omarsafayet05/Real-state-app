@@ -1,5 +1,13 @@
 //import { useState } from "react";
 
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Home from "./pages/Home";
+import Profile from "./pages/Profile";
+import About from "./pages/About";
+import SignIn from "./pages/SignIn";
+import SignOut from "./pages/SignOut";
+import Header from "./components/Header";
+
 function App() {
   //comma Operator
   let x = 11;
@@ -13,9 +21,26 @@ function App() {
   console.log(z);
   return (
     <>
-      <h2 className="text-cyan-500 flex justify-center">
-        Hello Brother,I love you so much.
-      </h2>
+      <BrowserRouter>
+        <Header />
+        <Routes>
+          <Route path="/" element={<Home />}>
+            Home
+          </Route>
+          <Route path="/profile" element={<Profile />}>
+            Profile
+          </Route>
+          <Route path="/about" element={<About />}>
+            About
+          </Route>
+          <Route path="/signin" element={<SignIn />}>
+            Sign In
+          </Route>
+          <Route path="/signout" element={<SignOut />}>
+            Sign Out
+          </Route>
+        </Routes>
+      </BrowserRouter>
     </>
   );
 }
